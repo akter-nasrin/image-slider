@@ -1,0 +1,42 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(150, 200, 201, 0.8);
+}
+.slider-container {
+  position: relative;
+  width: 50rem;
+  height: 30rem;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 99, 47, 0.9);
+}
+.image-container {
+  display: flex;
+  transition: transform 0.9s ease-in-out;
+  /* transform: translateX(-100rem); */
+}
+.btn {
+  position: absolute;
+  color: #fff;
+  font-size: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.5;
+  cursor: pointer;
+}
+.next {
+  right: 1rem;
+}
+.prev {
+  left: 1rem;
+}
+.btn:hover {
+  opacity: 1;
+}
